@@ -1,0 +1,273 @@
+/* =========================
+   LOGIN PAGE
+========================= */
+
+.login-page {
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 30px;
+}
+
+
+/* =========================
+   LOGIN CONTAINER
+========================= */
+
+.login-container {
+    width: 100%;
+    max-width: 420px;
+
+    background: #1b1917;
+
+    padding: 40px;
+
+    border: 1px solid #302b27;
+    border-radius: 14px;
+
+    box-shadow:
+        0 15px 40px rgba(0, 0, 0, 0.45);
+}
+
+
+/* =========================
+   LOGIN HEADER
+========================= */
+
+.login-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.login-header h1 {
+    color: #d6a66a;
+    font-size: 32px;
+    margin-bottom: 5px;
+}
+
+.login-header p {
+    color: #a69d95;
+}
+
+
+/* =========================
+   FORM
+========================= */
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.form-group label {
+    color: #eee7df;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.form-group input {
+    width: 100%;
+
+    padding: 13px 14px;
+
+    background: #121110;
+    color: #f5f0e9;
+
+    border: 1px solid #302b27;
+    border-radius: 8px;
+
+    font-family: inherit;
+    font-size: 14px;
+
+    outline: none;
+
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.form-group input::placeholder {
+    color: #706963;
+}
+
+.form-group input:focus {
+    border-color: #a8754c;
+
+    box-shadow:
+        0 0 0 3px rgba(214, 166, 106, 0.1);
+}
+
+
+/* =========================
+   LOGIN OPTIONS
+========================= */
+
+.login-options {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    font-size: 13px;
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+
+    color: #a69d95;
+}
+
+.remember-me input {
+    accent-color: #a8754c;
+}
+
+.login-options a {
+    color: #d6a66a;
+    text-decoration: none;
+}
+
+.login-options a:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================
+   LOGIN BUTTON
+========================= */
+
+.login-button {
+    width: 100%;
+
+    padding: 13px;
+
+    color: #ffffff;
+
+    background: linear-gradient(
+        135deg,
+        #a8754c,
+        #805334
+    );
+
+    border: 1px solid #b98558;
+    border-radius: 8px;
+
+    font-family: inherit;
+    font-size: 15px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.2s ease,
+        background 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.login-button:hover {
+    background: linear-gradient(
+        135deg,
+        #bd895c,
+        #94623e
+    );
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 7px 18px rgba(0, 0, 0, 0.4),
+        0 0 15px rgba(214, 166, 106, 0.15);
+}
+
+.login-button:active {
+    transform: translateY(0);
+}
+
+
+/* =========================
+   DIVIDER
+========================= */
+
+.login-divider {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    margin: 25px 0;
+
+    color: #706963;
+    font-size: 12px;
+}
+
+.login-divider::before,
+.login-divider::after {
+    content: "";
+
+    flex: 1;
+
+    height: 1px;
+
+    background: #302b27;
+}
+
+.login-divider span {
+    flex-shrink: 0;
+}
+
+
+/* =========================
+   SIGN UP
+========================= */
+
+.signup-section {
+    text-align: center;
+
+    color: #a69d95;
+    font-size: 14px;
+}
+
+.signup-link {
+    display: inline-block;
+
+    margin-top: 5px;
+
+    color: #d6a66a;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.signup-link:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================
+   BACK HOME
+========================= */
+
+.back-home {
+    text-align: center;
+
+    margin-top: 25px;
+}
+
+.back-home a {
+    color: #817a74;
+
+    font-size: 13px;
+
+    text-decoration: none;
+}
+
+.back-home a:hover {
+    color: #d6a66a;
+}

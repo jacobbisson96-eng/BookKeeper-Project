@@ -1,0 +1,114 @@
+/* Add Book Button */
+
+.add-book {
+    padding: 12px 20px;
+
+    color: #ffffff;
+
+    background: linear-gradient(
+        135deg,
+        #a8754c,
+        #805334
+    );
+
+    border: 1px solid #b98558;
+    border-radius: 8px;
+
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 4px 12px rgba(0, 0, 0, 0.35),
+        inset 0 1px 0 rgba(255, 255, 255, 0.12);
+
+    transition:
+        transform 0.2s ease,
+        background 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.add-book:hover {
+    background: linear-gradient(
+        135deg,
+        #bd895c,
+        #94623e
+    );
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 7px 18px rgba(0, 0, 0, 0.45),
+        0 0 15px rgba(214, 166, 106, 0.15);
+}
+
+.add-book:active {
+    transform: translateY(0);
+}
+
+
+/* Filter Buttons */
+
+.filter {
+    padding: 10px 18px;
+
+    background: transparent;
+    color: #a9a19a;
+
+    border: 1px solid transparent;
+    border-radius: 8px;
+
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.2s ease,
+        background 0.2s ease,
+        color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.filter:hover {
+    color: #f5f0e9;
+    background: #25211e;
+
+    transform: translateY(-1px);
+}
+
+.filter.active {
+    color: #ffffff;
+
+    background: linear-gradient(
+        135deg,
+        #a8754c,
+        #805334
+    );
+
+    border-color: #b17b51;
+
+    box-shadow:
+        0 4px 12px rgba(0, 0, 0, 0.35),
+        0 0 12px rgba(214, 166, 106, 0.12);
+}
+
+.filter.active:hover {
+    background: linear-gradient(
+        135deg,
+        #bd895c,
+        #94623e
+    );
+}
+
+.filter:active {
+    transform: scale(0.97);
+}
+
+button:focus-visible {
+    outline: 2px solid #d6a66a;
+    outline-offset: 3px;
+}
